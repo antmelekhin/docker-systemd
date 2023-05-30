@@ -5,8 +5,8 @@ LABEL maintainer='Anton Melekhin'
 ENV container=docker
 
 RUN INSTALL_PKGS='findutils initscripts iproute python3 sudo' \
-    && yum makecache && yum install -y $INSTALL_PKGS \
-    && yum clean all
+    && dnf makecache && dnf install -y $INSTALL_PKGS \
+    && dnf clean all
 
 RUN find /etc/systemd/system \
     /lib/systemd/system \

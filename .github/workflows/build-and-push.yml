@@ -32,9 +32,9 @@ jobs:
           - name: 'rockylinux-9'
             dockerfile: 'rockylinux/9.Dockerfile'
             tags: 'antmelekhin/docker-systemd:rockylinux-9'
-          - name: 'amazonlinux-2'
-            dockerfile: 'amazonlinux/2.Dockerfile'
-            tags: 'antmelekhin/docker-systemd:amazonlinux-2'
+          - name: 'amazonlinux-2023'
+            dockerfile: 'amazonlinux/2023.Dockerfile'
+            tags: 'antmelekhin/docker-systemd:amazonlinux-2023'
 
     steps:
       - name: 'Checkout the codebase'
