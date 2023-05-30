@@ -1,5 +1,7 @@
 FROM rockylinux:8
 
+LABEL maintainer='Anton Melekhin'
+
 ENV container=docker
 
 RUN INSTALL_PKGS='findutils initscripts iproute python3 sudo' \

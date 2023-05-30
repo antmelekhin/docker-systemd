@@ -1,5 +1,7 @@
 FROM debian:buster
 
+LABEL maintainer='Anton Melekhin'
+
 ENV container=docker \
     DEBIAN_FRONTEND=noninteractive
 

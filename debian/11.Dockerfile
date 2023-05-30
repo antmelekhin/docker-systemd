@@ -1,5 +1,7 @@
 FROM debian:bullseye
 
+LABEL maintainer='Anton Melekhin'
+
 ENV container=docker \
     DEBIAN_FRONTEND=noninteractive
 

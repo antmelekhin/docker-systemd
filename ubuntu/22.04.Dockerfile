@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+LABEL maintainer='Anton Melekhin'
+
 ENV container=docker \
     DEBIAN_FRONTEND=noninteractive
 
