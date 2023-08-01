@@ -5,7 +5,7 @@ LABEL maintainer='Anton Melekhin'
 ENV container=docker \
     DEBIAN_FRONTEND=noninteractive
 
-RUN INSTALL_PKGS='ca-certificates gnupg iproute2 python3 sudo systemd' \
+RUN INSTALL_PKGS='ca-certificates gnupg iproute2 python3 python3-apt sudo systemd' \
     && apt-get update && apt-get install $INSTALL_PKGS -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
