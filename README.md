@@ -1,15 +1,77 @@
-# Docker images for running systemd
+# Docker images with systemd support
 
-## Build
+Docker containers that uses for Ansible role and playbook testing.
 
-```bash
-docker build -t docker-systemd:ubuntu-22.04 -f ubuntu/22.04.Dockerfile .
+## Supported tags and platforms
+
+Amazon Linux:
+
+- `amazonlinux-2023` (`linux/amd64`,`linux/arm64`)
+
+CentOS:
+
+- `centos-7` (`linux/amd64`)
+
+Debian:
+
+- `debian-10` (`linux/amd64`,`linux/arm64`)
+- `debian-11` (`linux/amd64`,`linux/arm64`)
+- `debian-12` (`linux/amd64`,`linux/arm64`)
+
+Rocky Linux:
+
+- `rockylinux-8` (`linux/amd64`,`linux/arm64`)
+- `rockylinux-9` (`linux/amd64`,`linux/arm64`)
+
+Ubuntu:
+
+- `ubuntu-20.04` (`linux/amd64`,`linux/arm64`)
+- `ubuntu-22.04` (`linux/amd64`,`linux/arm64`)
+
+## Usage
+
+```yaml
+---
+dependency:
+  name: galaxy
+  enabled: true
+driver:
+  name: docker
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+platforms:
+  - name: 'instance-ubuntu'
+    image: 'antmelekhin/docker-systemd:ubuntu-22.04'
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - /var/lib/containerd
+    cgroupns_mode: host
+    privileged: true
+    pre_build_image: true
+    groups:
+      - rhel_family
+  - name: 'instance-rocky'
+    image: 'antmelekhin/docker-systemd:rockylinux-9'
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - /var/lib/containerd
+    cgroupns_mode: host
+    privileged: true
+    pre_build_image: true
+    groups:
+      - debian_family
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
 ```
 
-## Run
+## License
 
-```bash
-docker run -d --name systemd-ubuntu-22.04 --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host docker-systemd:ubuntu-22.04
+MIT
 
-docker exec -it systemd-ubuntu-22.04 /bin/bash
-```
+## Author
+
+Melekhin Anton.
