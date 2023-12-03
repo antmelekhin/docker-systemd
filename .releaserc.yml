@@ -1,0 +1,94 @@
+---
+branches: ['main']
+preset: 'conventionalcommits'
+ci: false
+
+verifyConditions:
+  - '@semantic-release/changelog'
+  - '@semantic-release/git'
+  - '@semantic-release/github'
+
+analyzeCommits:
+  - path: '@semantic-release/commit-analyzer'
+    releaseRules:
+      - type: 'breaking'
+        release: 'major'
+      - type: 'chore'
+        release: false
+      - type: 'ci'
+        release: false
+      - type: 'docs'
+        release: false
+      - type: 'feat'
+        release: 'minor'
+      - type: 'fix'
+        release: 'patch'
+      - type: 'improv'
+        release: 'minor'
+      - type: 'refactor'
+        release: 'patch'
+      - type: 'revert'
+        release: 'patch'
+      - type: 'style'
+        release: false
+      - type: 'test'
+        release: false
+
+generateNotes:
+  - path: '@semantic-release/release-notes-generator'
+    writerOpts:
+      groupBy: 'type'
+      commitGroupsSort: 'title'
+      commitsSort: 'header'
+    linkCompare: true
+    linkReferences: true
+    presetConfig:
+      types:
+        - type: 'breaking'
+          section: 'Breaking changes!'
+          hidden: false
+        - type: 'chore'
+          section: 'Miscellaneous Chores'
+          hidden: true
+        - type: 'ci'
+          section: 'Continuous Integration'
+          hidden: false
+        - type: 'docs'
+          section: 'Documentation'
+          hidden: false
+        - type: 'feat'
+          section: 'Features'
+          hidden: false
+        - type: 'fix'
+          section: 'Fixes'
+          hidden: false
+        - type: 'improv'
+          section: 'Improvements'
+          hidden: false
+        - type: 'refactor'
+          section: 'Code Refactoring'
+          hidden: false
+        - type: 'revert'
+          section: 'Reverts'
+          hidden: false
+        - type: 'style'
+          section: 'Styles'
+          hidden: false
+        - type: 'test'
+          section: 'Tests'
+          hidden: false
+
+prepare:
+  - path: '@semantic-release/changelog'
+    changelogFile: 'CHANGELOG.md'
+    changelogTitle: '# Changelog'
+  - path: '@semantic-release/git'
+    assets: ['CHANGELOG.md']
+    message: "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+
+publish:
+  - path: '@semantic-release/github'
+
+success: false
+
+fail: false

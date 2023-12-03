@@ -1,0 +1,30 @@
+---
+name: 'Release'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    name: 'Release'
+    runs-on: ubuntu-latest
+    # Skip running release workflow on forks
+    if: github.repository_owner == 'antmelekhin'
+    steps:
+      - name: 'Checkout the codebase'
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: 'Semantic Release'
+        uses: cycjimmy/semantic-release-action@v3
+        with:
+          semantic_version: 19.0.5
+          extra_plugins: |
+            @semantic-release/git@10.0.1
+            @semantic-release/changelog@6.0.3
+            conventional-changelog-conventionalcommits@5.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
