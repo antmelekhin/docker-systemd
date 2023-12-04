@@ -2,9 +2,15 @@
 name: 'Build docker images'
 on:
   pull_request:
+    paths:
+      - '**.Dockerfile'
+      - '.github/workflows/build-and-push.yml'
   push:
     branches:
       - main
+    paths:
+      - '**.Dockerfile'
+      - '.github/workflows/build-and-push.yml'
   schedule:
     - cron: '0 1 * * 0'
 
@@ -14,42 +20,33 @@ jobs:
     strategy:
       matrix:
         include:
-          - name: 'centos-7'
-            dockerfile: 'centos/7.Dockerfile'
-            platforms: linux/amd64
-            tags: 'antmelekhin/docker-systemd:centos-7'
-          - name: 'debian-10'
-            dockerfile: 'debian/10.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:debian-10'
-          - name: 'debian-11'
-            dockerfile: 'debian/11.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:debian-11'
-          - name: 'debian-12'
-            dockerfile: 'debian/12.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:debian-12'
-          - name: 'ubuntu-20.04'
-            dockerfile: 'ubuntu/20.04.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:ubuntu-20.04'
-          - name: 'ubuntu-22.04'
-            dockerfile: 'ubuntu/22.04.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:ubuntu-22.04'
-          - name: 'rockylinux-8'
-            dockerfile: 'rockylinux/8.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:rockylinux-8'
-          - name: 'rockylinux-9'
-            dockerfile: 'rockylinux/9.Dockerfile'
-            platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:rockylinux-9'
-          - name: 'amazonlinux-2023'
+          - tag: 'amazonlinux-2023'
             dockerfile: 'amazonlinux/2023.Dockerfile'
             platforms: linux/amd64,linux/arm64
-            tags: 'antmelekhin/docker-systemd:amazonlinux-2023'
+          - tag: 'centos-7'
+            dockerfile: 'centos/7.Dockerfile'
+            platforms: linux/amd64
+          - tag: 'debian-10'
+            dockerfile: 'debian/10.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'debian-11'
+            dockerfile: 'debian/11.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'debian-12'
+            dockerfile: 'debian/12.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'rockylinux-8'
+            dockerfile: 'rockylinux/8.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'rockylinux-9'
+            dockerfile: 'rockylinux/9.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'ubuntu-20.04'
+            dockerfile: 'ubuntu/20.04.Dockerfile'
+            platforms: linux/amd64,linux/arm64
+          - tag: 'ubuntu-22.04'
+            dockerfile: 'ubuntu/22.04.Dockerfile'
+            platforms: linux/amd64,linux/arm64
 
     steps:
       - name: 'Checkout the codebase'
@@ -67,11 +64,11 @@ jobs:
           username: 'antmelekhin'
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
 
-      - name: 'Build and push ${{ matrix.name }}'
+      - name: 'Build and push ${{ matrix.tag }}'
         uses: docker/build-push-action@v4
         with:
           context: .
-          file: ${{ matrix.dockerfile }}
-          platforms: ${{ matrix.platforms }}
+          file: '${{ matrix.dockerfile }}'
+          platforms: '${{ matrix.platforms }}'
           push: true
-          tags: ${{ matrix.tags }}
+          tags: 'antmelekhin/docker-systemd:${{ matrix.tag }}'
