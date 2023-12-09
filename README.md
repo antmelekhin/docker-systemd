@@ -51,7 +51,7 @@ platforms:
     privileged: true
     pre_build_image: true
     groups:
-      - rhel_family
+      - debian_family
   - name: 'instance-rocky'
     image: 'antmelekhin/docker-systemd:rockylinux-9'
     volumes:
@@ -61,7 +61,7 @@ platforms:
     privileged: true
     pre_build_image: true
     groups:
-      - debian_family
+      - rhel_family
 provisioner:
   name: ansible
 verifier:
