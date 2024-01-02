@@ -41,6 +41,9 @@ jobs:
           - tag: 'rockylinux-9'
             dockerfile: 'rockylinux/9.Dockerfile'
             platforms: linux/amd64,linux/arm64
+          - tag: 'ubuntu-18.04'
+            dockerfile: 'ubuntu/18.04.Dockerfile'
+            platforms: linux/amd64,linux/arm64
           - tag: 'ubuntu-20.04'
             dockerfile: 'ubuntu/20.04.Dockerfile'
             platforms: linux/amd64,linux/arm64
