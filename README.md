@@ -38,10 +38,6 @@ dependency:
   enabled: true
 driver:
   name: docker
-lint: |
-  set -e
-  yamllint .
-  ansible-lint
 platforms:
   - name: 'instance-ubuntu'
     image: 'antmelekhin/docker-systemd:ubuntu-22.04'
