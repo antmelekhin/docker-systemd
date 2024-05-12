@@ -11,7 +11,7 @@ verifyConditions:
 analyzeCommits:
   - path: '@semantic-release/commit-analyzer'
     releaseRules:
-      - type: 'breaking'
+      - breaking: true
         release: 'major'
       - type: 'chore'
         release: false
@@ -19,6 +19,9 @@ analyzeCommits:
         release: false
       - type: 'docs'
         release: false
+      - type: 'docs'
+        scope: 'README'
+        release: patch
       - type: 'feat'
         release: 'minor'
       - type: 'fix'
@@ -27,7 +30,7 @@ analyzeCommits:
         release: 'minor'
       - type: 'refactor'
         release: 'patch'
-      - type: 'revert'
+      - revert: true
         release: 'patch'
       - type: 'style'
         release: false

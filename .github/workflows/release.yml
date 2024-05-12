@@ -13,18 +13,18 @@ jobs:
     if: github.repository_owner == 'antmelekhin'
     steps:
       - name: 'Checkout the codebase'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
 
       - name: 'Semantic Release'
-        uses: cycjimmy/semantic-release-action@v3
+        uses: cycjimmy/semantic-release-action@v4
         with:
-          semantic_version: 19.0.5
+          semantic_version: 23.0.8
           extra_plugins: |
             @semantic-release/git@10.0.1
             @semantic-release/changelog@6.0.3
-            conventional-changelog-conventionalcommits@5.0.0
+            conventional-changelog-conventionalcommits@7.0.2
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
