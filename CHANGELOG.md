@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.2](https://github.com/antmelekhin/docker-systemd/compare/v1.0.1...v1.0.2) (2024-05-12)
+
+
+### Continuous Integration
+
+* update actions version ([8169eb3](https://github.com/antmelekhin/docker-systemd/commit/8169eb30913f2c8fc5d97e1fe84f107b4e81c53c))
+* update release rules ([574d43e](https://github.com/antmelekhin/docker-systemd/commit/574d43ef21b9009a6cba192aefe4be003da714f4))
+
+
+### Documentation
+
+* **README:** fix usage ([ade884e](https://github.com/antmelekhin/docker-systemd/commit/ade884edf181fef13f90c265e640fc0ab04f1c87))
+
 ## [1.0.1](https://github.com/antmelekhin/docker-systemd/compare/v1.0.0...v1.0.1) (2024-05-12)
 
 
