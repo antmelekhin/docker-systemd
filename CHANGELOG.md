@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/antmelekhin/docker-systemd/compare/v1.0.0...v1.0.1) (2024-05-12)
+
+
+### Fixes
+
+* update debian-based package list ([77082ad](https://github.com/antmelekhin/docker-systemd/commit/77082ad1858806e495ad830df80e8c304bb4b1a7))
+
 ## [1.0.0](https://github.com/antmelekhin/docker-systemd/compare/...v1.0.0) (2024-01-02)
 
 
