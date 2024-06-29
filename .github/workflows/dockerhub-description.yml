@@ -1,0 +1,21 @@
+name: 'Update DockerHub Description'
+on:
+  push:
+    branches: ['main']
+    paths:
+      - 'README.md'
+      - '.github/workflows/dockerhub-description.yml'
+jobs:
+  dockerHubDescription:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: 'Checkout the codebase'
+        uses: 'actions/checkout@v4'
+
+      - name: 'DockerHub Description'
+        uses: 'peter-evans/dockerhub-description@v4'
+        with:
+          username: 'antmelekhin'
+          password: ${{ secrets.DOCKER_HUB_TOKEN }}
+          short-description: ${{ github.event.repository.description }}
+          enable-url-completion: true

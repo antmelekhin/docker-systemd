@@ -34,35 +34,35 @@ Ubuntu:
 ```yaml
 ---
 dependency:
-  name: galaxy
+  name: 'galaxy'
   enabled: true
 driver:
-  name: docker
+  name: 'docker'
 platforms:
   - name: 'instance-ubuntu'
     image: 'antmelekhin/docker-systemd:ubuntu-22.04'
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:rw
-      - /var/lib/containerd
-    cgroupns_mode: host
+      - '/sys/fs/cgroup:/sys/fs/cgroup:rw'
+      - '/var/lib/containerd'
+    cgroupns_mode: 'host'
     privileged: true
     pre_build_image: true
     groups:
-      - debian_family
+      - 'debian_family'
   - name: 'instance-rocky'
     image: 'antmelekhin/docker-systemd:rockylinux-9'
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:rw
-      - /var/lib/containerd
-    cgroupns_mode: host
+      - '/sys/fs/cgroup:/sys/fs/cgroup:rw'
+      - '/var/lib/containerd'
+    cgroupns_mode: 'host'
     privileged: true
     pre_build_image: true
     groups:
-      - rhel_family
+      - 'rhel_family'
 provisioner:
-  name: ansible
+  name: 'ansible'
 verifier:
-  name: ansible
+  name: 'ansible'
 ```
 
 ## License
