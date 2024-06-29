@@ -18,9 +18,7 @@ jobs:
         include:
           - tag: 'amazonlinux-2023'
             dockerfile: 'amazonlinux/2023.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64, linux/arm64'
 
           - tag: 'centos-7'
             dockerfile: 'centos/7.Dockerfile'
@@ -28,51 +26,35 @@ jobs:
 
           - tag: 'debian-10'
             dockerfile: 'debian/10.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'debian-11'
             dockerfile: 'debian/11.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'debian-12'
             dockerfile: 'debian/12.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'rockylinux-8'
             dockerfile: 'rockylinux/8.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'rockylinux-9'
             dockerfile: 'rockylinux/9.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'ubuntu-18.04'
             dockerfile: 'ubuntu/18.04.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'ubuntu-20.04'
             dockerfile: 'ubuntu/20.04.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'ubuntu-22.04'
             dockerfile: 'ubuntu/22.04.Dockerfile'
-            platforms:
-              - 'linux/amd64'
-              - 'linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
     steps:
       - name: 'Checkout the codebase'
