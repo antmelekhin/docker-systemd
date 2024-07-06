@@ -37,11 +37,11 @@ jobs:
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'fedora-39'
-            dockerfile: 'debian/39.Dockerfile'
+            dockerfile: 'fedora/39.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'fedora-40'
-            dockerfile: 'debian/40.Dockerfile'
+            dockerfile: 'fedora/40.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'rockylinux-8'
