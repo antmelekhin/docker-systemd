@@ -94,6 +94,12 @@ verifier:
   docker exec -it systemd-${DISTR}-${VERSION} /bin/bash
   ```
 
+- Remove the container
+
+  ```bash
+  docker rm -f systemd-${DISTR}-${VERSION}
+  ```
+
 ## License
 
 MIT
