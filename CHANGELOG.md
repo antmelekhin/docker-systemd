@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/antmelekhin/docker-systemd/compare/v1.0.2...v1.1.0) (2024-07-06)
+
+
+### Continuous Integration
+
+* add `dockerhub-description` workflow ([7e54e38](https://github.com/antmelekhin/docker-systemd/commit/7e54e389c5ecc1bff2dfed71d523b31f33e2428d))
+* fix platforms ([7e46c60](https://github.com/antmelekhin/docker-systemd/commit/7e46c608540fa6e51d05ba7fd430f5915865edf5))
+* update workflow ([0f7ba17](https://github.com/antmelekhin/docker-systemd/commit/0f7ba177f3b1f1d8fa381677e1f687168768046f))
+
+
+### Features
+
+* add `fedora` support ([44cba2c](https://github.com/antmelekhin/docker-systemd/commit/44cba2c875c2eda18b6914d6d6b0d4972630116e))
+
 ## [1.0.2](https://github.com/antmelekhin/docker-systemd/compare/v1.0.1...v1.0.2) (2024-05-12)
 
 
