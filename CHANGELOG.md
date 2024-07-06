@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.1.1](https://github.com/antmelekhin/docker-systemd/compare/v1.1.0...v1.1.1) (2024-07-06)
+
+
+### Continuous Integration
+
+* fix fedora path in workflow ([f9dca36](https://github.com/antmelekhin/docker-systemd/commit/f9dca367f8a8322890c2e6cf29d66bc42fd188f9))
+
+
+### Documentation
+
+* **README:** update documentation ([bb13306](https://github.com/antmelekhin/docker-systemd/commit/bb133061c2d3d8ac636e8dece12b5a0bdf5e5736))
+
+
+### Fixes
+
+* fixed centos yum repository mirrors ([7d6c43d](https://github.com/antmelekhin/docker-systemd/commit/7d6c43d55674d52cfe514b3ca8c45a933c7c81d6))
+
 ## [1.1.0](https://github.com/antmelekhin/docker-systemd/compare/v1.0.2...v1.1.0) (2024-07-06)
 
 
