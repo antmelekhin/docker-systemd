@@ -18,7 +18,7 @@ jobs:
         include:
           - tag: 'amazonlinux-2023'
             dockerfile: 'amazonlinux/2023.Dockerfile'
-            platforms: 'linux/amd64, linux/arm64'
+            platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'centos-7'
             dockerfile: 'centos/7.Dockerfile'
@@ -34,6 +34,14 @@ jobs:
 
           - tag: 'debian-12'
             dockerfile: 'debian/12.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
+          - tag: 'fedora-39'
+            dockerfile: 'debian/39.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
+          - tag: 'fedora-40'
+            dockerfile: 'debian/40.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'rockylinux-8'

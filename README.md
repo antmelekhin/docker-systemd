@@ -18,6 +18,11 @@ Debian:
 - `debian-11` (`linux/amd64`,`linux/arm64`)
 - `debian-12` (`linux/amd64`,`linux/arm64`)
 
+Fedora:
+
+- `fedora-39` (`linux/amd64`,`linux/arm64`)
+- `fedora-40` (`linux/amd64`,`linux/arm64`)
+
 Rocky Linux:
 
 - `rockylinux-8` (`linux/amd64`,`linux/arm64`)
@@ -30,6 +35,8 @@ Ubuntu:
 - `ubuntu-22.04` (`linux/amd64`,`linux/arm64`)
 
 ## Usage
+
+### With Molecule
 
 ```yaml
 ---
@@ -64,6 +71,28 @@ provisioner:
 verifier:
   name: 'ansible'
 ```
+
+### Build and run
+
+- Build the image with `Ubuntu 22.04`
+
+  ```bash
+  export DISTR='ubuntu'
+  export VERSION='22.04'
+  docker build -t docker-systemd:${DISTR}-${VERSION} -f ${DISTR}/${VERSION}.Dockerfile .
+  ```
+
+- Run the container
+
+  ```bash
+  docker run -d --name systemd-${DISTR}-${VERSION} --privileged -v /sys/fs/cgroup:/sys/fs/cgroup:rw --cgroupns=host docker-systemd:${DISTR}-${VERSION}
+  ```
+
+- Enter to the container
+
+  ```bash
+  docker exec -it systemd-${DISTR}-${VERSION} /bin/bash
+  ```
 
 ## License
 
