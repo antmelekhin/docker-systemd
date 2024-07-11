@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/antmelekhin/docker-systemd/compare/v1.1.1...v1.2.0) (2024-07-11)
+
+
+### Features
+
+* add `ubuntu-24.04` ([ffa8c4b](https://github.com/antmelekhin/docker-systemd/commit/ffa8c4bca9d0c069f4d3d47ed406dd4fb319afc1))
+
 ## [1.1.1](https://github.com/antmelekhin/docker-systemd/compare/v1.1.0...v1.1.1) (2024-07-06)
 
 
