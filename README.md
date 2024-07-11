@@ -33,6 +33,7 @@ Ubuntu:
 - `ubuntu-18.04` (`linux/amd64`,`linux/arm64`)
 - `ubuntu-20.04` (`linux/amd64`,`linux/arm64`)
 - `ubuntu-22.04` (`linux/amd64`,`linux/arm64`)
+- `ubuntu-24.04` (`linux/amd64`,`linux/arm64`)
 
 ## Usage
 
