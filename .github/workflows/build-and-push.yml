@@ -91,6 +91,8 @@ jobs:
       - name: 'Build and push ${{ matrix.tag }}'
         uses: 'docker/build-push-action@v6'
         with:
+          cache-from: 'type=gha,scope=${{ matrix.tag }}'
+          cache-to: 'type=gha,scope=${{ matrix.tag }}'
           context: .
           file: '${{ matrix.dockerfile }}'
           platforms: '${{ matrix.platforms }}'
