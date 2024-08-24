@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/antmelekhin/docker-systemd/compare/v1.2.0...v1.3.0) (2024-08-24)
+
+
+### Features
+
+* add `amazonlinux/2.Dockerfile` ([897e322](https://github.com/antmelekhin/docker-systemd/commit/897e3222746392f022055571a3de660dd8befffa))
+
+
+### Styles
+
+* add quotes to `centos/7.Dockerfile` ([c73df2a](https://github.com/antmelekhin/docker-systemd/commit/c73df2a147c338d28efd9c2905bdaa90eb24f803))
+
 ## [1.2.0](https://github.com/antmelekhin/docker-systemd/compare/v1.1.1...v1.2.0) (2024-07-11)
 
 
