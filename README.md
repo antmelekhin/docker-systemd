@@ -6,6 +6,7 @@ Docker containers that uses for Ansible role and playbook testing.
 
 Amazon Linux:
 
+- `amazonlinux-2` (`linux/amd64`)
 - `amazonlinux-2023` (`linux/amd64`,`linux/arm64`)
 
 CentOS:
