@@ -1,15 +1,16 @@
 ---
 name: 'Release'
 on:
-  push:
+  workflow_run:
+    workflows: ['Build docker images']
+    types: ['completed']
     branches: ['main']
 
 jobs:
   release:
     name: 'Release'
     runs-on: 'ubuntu-latest'
-    # Skip running release workflow on forks
-    if: github.repository_owner == 'antmelekhin'
+    if: ${{ github.repository_owner == 'antmelekhin' && github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 'Checkout the codebase'
         uses: 'actions/checkout@v4'
