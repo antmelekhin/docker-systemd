@@ -7,7 +7,7 @@ on:
       - '**.Dockerfile'
       - '.github/workflows/build-and-push.yml'
   schedule:
-    - cron: '0 1 1 * *'
+    - cron: '0 1 * * 0'
 
 jobs:
   docker:
