@@ -4,6 +4,11 @@ Docker containers that uses for Ansible role and playbook testing.
 
 ## Supported tags and platforms
 
+Alma Linux:
+
+- `almalinux-8` (`linux/amd64`,`linux/arm64`)
+- `almalinux-9` (`linux/amd64`,`linux/arm64`)
+
 Amazon Linux:
 
 - `amazonlinux-2` (`linux/amd64`)

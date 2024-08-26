@@ -16,6 +16,14 @@ jobs:
     strategy:
       matrix:
         include:
+          - tag: 'almalinux-8'
+            dockerfile: 'almalinux/8.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
+          - tag: 'almalinux-9'
+            dockerfile: 'almalinux/9.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'amazonlinux-2'
             dockerfile: 'amazonlinux/2.Dockerfile'
             platforms: 'linux/amd64'
