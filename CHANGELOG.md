@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.4.0](https://github.com/antmelekhin/docker-systemd/compare/v1.3.0...v1.4.0) (2024-08-26)
+
+
+### Continuous Integration
+
+* add cache management ([1447c8d](https://github.com/antmelekhin/docker-systemd/commit/1447c8d5ef0467d15476f126f8c872769a053c92))
+* revert to the old schedule for updating images ([145b1bb](https://github.com/antmelekhin/docker-systemd/commit/145b1bb467fef566af665093727ebbae02ed33cd))
+
+
+### Features
+
+* add `almalinux` support ([a8a02f4](https://github.com/antmelekhin/docker-systemd/commit/a8a02f4997a06397ae770bc62abf8774d309a44b))
+
 ## [1.3.0](https://github.com/antmelekhin/docker-systemd/compare/v1.2.0...v1.3.0) (2024-08-24)
 
 
