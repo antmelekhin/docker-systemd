@@ -4,7 +4,7 @@ LABEL maintainer='Anton Melekhin'
 
 ENV container=docker
 
-RUN INSTALL_PKGS='findutils initscripts iproute python3 sudo' \
+RUN INSTALL_PKGS='findutils glibc-common initscripts iproute python3 sudo' \
     && dnf makecache && dnf install -y $INSTALL_PKGS \
     && dnf clean all
 
