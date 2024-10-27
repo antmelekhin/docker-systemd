@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.1](https://github.com/antmelekhin/docker-systemd/compare/v1.4.0...v1.4.1) (2024-10-27)
+
+
+### Continuous Integration
+
+* update workflows ([1155b66](https://github.com/antmelekhin/docker-systemd/commit/1155b66763b7605aca272bc3edd64c272be17f37))
+
+
+### Fixes
+
+* add `glibc-common` to rh-based dockerfiles ([3d7d5ae](https://github.com/antmelekhin/docker-systemd/commit/3d7d5ae601aa6575fa0b7828fe3e69746ba55aab))
+
 ## [1.4.0](https://github.com/antmelekhin/docker-systemd/compare/v1.3.0...v1.4.0) (2024-08-26)
 
 
