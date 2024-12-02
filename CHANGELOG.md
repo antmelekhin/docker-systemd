@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/antmelekhin/docker-systemd/compare/v1.4.1...v1.4.2) (2024-12-02)
+
+
+### Fixes
+
+* changes `rockylinux` to `rockylinux\rockylinux` base image ([1a2a41c](https://github.com/antmelekhin/docker-systemd/commit/1a2a41cc7be981eb74e14682f54005bbb1127ad6))
+
 ## [1.4.1](https://github.com/antmelekhin/docker-systemd/compare/v1.4.0...v1.4.1) (2024-10-27)
 
 
