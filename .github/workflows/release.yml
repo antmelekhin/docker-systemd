@@ -9,7 +9,7 @@ on:
 jobs:
   release:
     name: 'Release'
-    runs-on: 'ubuntu-latest'
+    runs-on: 'ubuntu-22.04'
     if: ${{ github.repository_owner == 'antmelekhin' && github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: 'Checkout the codebase'
