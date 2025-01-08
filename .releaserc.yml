@@ -55,7 +55,7 @@ generateNotes:
           hidden: true
         - type: 'ci'
           section: 'Continuous Integration'
-          hidden: false
+          hidden: true
         - type: 'docs'
           section: 'Documentation'
           hidden: false
@@ -79,7 +79,7 @@ generateNotes:
           hidden: false
         - type: 'test'
           section: 'Tests'
-          hidden: false
+          hidden: true
 
 prepare:
   - path: '@semantic-release/changelog'
