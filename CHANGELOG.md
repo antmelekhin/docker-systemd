@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/antmelekhin/docker-systemd/compare/v1.4.2...v1.5.0) (2025-04-11)
+
+
+### Features
+
+* add fedora-41 ([8e0e685](https://github.com/antmelekhin/docker-systemd/commit/8e0e6854ef9366bbcb7ec5f7a9d477fc318d7b24))
+
 ## [1.4.2](https://github.com/antmelekhin/docker-systemd/compare/v1.4.1...v1.4.2) (2024-12-02)
 
 
