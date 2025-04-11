@@ -28,6 +28,7 @@ Fedora:
 
 - `fedora-39` (`linux/amd64`,`linux/arm64`)
 - `fedora-40` (`linux/amd64`,`linux/arm64`)
+- `fedora-41` (`linux/amd64`,`linux/arm64`)
 
 Rocky Linux:
 
