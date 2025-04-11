@@ -56,6 +56,10 @@ jobs:
             dockerfile: 'fedora/40.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'fedora-41'
+            dockerfile: 'fedora/41.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'rockylinux-8'
             dockerfile: 'rockylinux/8.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
