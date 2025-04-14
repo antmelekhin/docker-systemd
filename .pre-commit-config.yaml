@@ -1,0 +1,26 @@
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-merge-conflict
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: local
+    hooks:
+      - id: hadolint
+        name: lint dockerfiles
+        entry: hadolint
+        language: system
+        types: [dockerfile]
+        args:
+          [
+            '--ignore=DL3008',
+            '--ignore=DL3033',
+            '--ignore=DL3041',
+            '--ignore=DL4006',
+            '--ignore=SC2086',
+          ]
