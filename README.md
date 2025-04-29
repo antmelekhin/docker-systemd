@@ -30,6 +30,10 @@ Fedora:
 - `fedora-40` (`linux/amd64`,`linux/arm64`)
 - `fedora-41` (`linux/amd64`,`linux/arm64`)
 
+Opensuse:
+
+- `opensuse-15.6` (`linux/amd64`,`linux/arm64`)
+
 Rocky Linux:
 
 - `rockylinux-8` (`linux/amd64`,`linux/arm64`)

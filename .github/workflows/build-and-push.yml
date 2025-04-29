@@ -60,6 +60,10 @@ jobs:
             dockerfile: 'fedora/41.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'opensuse-15.6'
+            dockerfile: 'opensuse/15.6.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'rockylinux-8'
             dockerfile: 'rockylinux/8.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
