@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/antmelekhin/docker-systemd/compare/v1.5.1...v1.6.0) (2025-04-29)
+
+
+### Features
+
+* add opensuse-15.6 ([bafda87](https://github.com/antmelekhin/docker-systemd/commit/bafda876f295f0fda619ae4be14f1db24458e16c))
+
+
+### Styles
+
+* fixing lint errors ([73f73e1](https://github.com/antmelekhin/docker-systemd/commit/73f73e1343238d9742bc9bad667a198d3da2b183))
+
 ## [1.5.1](https://github.com/antmelekhin/docker-systemd/compare/v1.5.0...v1.5.1) (2025-04-13)
 
 
