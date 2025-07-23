@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/antmelekhin/docker-systemd/compare/v1.6.0...v1.6.1) (2025-07-23)
+
+
+### Fixes
+
+* change debian 10 repository mirror to archive ([a5c5ece](https://github.com/antmelekhin/docker-systemd/commit/a5c5ece1fb14682ed1b4654798596ad20aec59ad))
+
 ## [1.6.0](https://github.com/antmelekhin/docker-systemd/compare/v1.5.1...v1.6.0) (2025-04-29)
 
 
