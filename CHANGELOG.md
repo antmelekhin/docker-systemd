@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/antmelekhin/docker-systemd/compare/v1.6.1...v1.7.0) (2025-08-02)
+
+
+### Features
+
+* add opensuse-tumbleweed ([7ea32b6](https://github.com/antmelekhin/docker-systemd/commit/7ea32b655d5b0eb212a1fe9c9b7e9a119c4b6564))
+
 ## [1.6.1](https://github.com/antmelekhin/docker-systemd/compare/v1.6.0...v1.6.1) (2025-07-23)
 
 
