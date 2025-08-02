@@ -18,6 +18,7 @@ repos:
         types: [dockerfile]
         args:
           [
+            '--ignore=DL3007',
             '--ignore=DL3008',
             '--ignore=DL3033',
             '--ignore=DL3037',

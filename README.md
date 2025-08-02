@@ -33,6 +33,7 @@ Fedora:
 Opensuse:
 
 - `opensuse-15.6` (`linux/amd64`,`linux/arm64`)
+- `opensuse-tumbleweed` (`linux/amd64`,`linux/arm64`)
 
 Rocky Linux:
 
