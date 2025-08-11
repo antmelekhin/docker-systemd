@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/antmelekhin/docker-systemd/compare/v1.7.0...v1.8.0) (2025-08-11)
+
+
+### Features
+
+* add debian-13 ([335af3b](https://github.com/antmelekhin/docker-systemd/commit/335af3be62edfa48f07f692f03f47ec963f10334))
+
 ## [1.7.0](https://github.com/antmelekhin/docker-systemd/compare/v1.6.1...v1.7.0) (2025-08-02)
 
 
