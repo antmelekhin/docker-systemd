@@ -48,6 +48,10 @@ jobs:
             dockerfile: 'debian/12.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'debian-13'
+            dockerfile: 'debian/13.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'fedora-39'
             dockerfile: 'fedora/39.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'

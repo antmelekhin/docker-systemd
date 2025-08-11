@@ -23,6 +23,7 @@ Debian:
 - `debian-10` (`linux/amd64`,`linux/arm64`)
 - `debian-11` (`linux/amd64`,`linux/arm64`)
 - `debian-12` (`linux/amd64`,`linux/arm64`)
+- `debian-13` (`linux/amd64`,`linux/arm64`)
 
 Fedora:
 
