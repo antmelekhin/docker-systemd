@@ -8,6 +8,7 @@ Alma Linux:
 
 - `almalinux-8` (`linux/amd64`,`linux/arm64`)
 - `almalinux-9` (`linux/amd64`,`linux/arm64`)
+- `almalinux-10` (`linux/amd64`,`linux/arm64`)
 
 Amazon Linux:
 
@@ -40,6 +41,7 @@ Rocky Linux:
 
 - `rockylinux-8` (`linux/amd64`,`linux/arm64`)
 - `rockylinux-9` (`linux/amd64`,`linux/arm64`)
+- `rockylinux-10` (`linux/amd64`,`linux/arm64`)
 
 Ubuntu:
 
