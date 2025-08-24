@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/antmelekhin/docker-systemd/compare/v1.8.0...v1.9.0) (2025-08-24)
+
+
+### Features
+
+* add 10.Dockerfile for alma and rockylinux ([4c50f98](https://github.com/antmelekhin/docker-systemd/commit/4c50f98eff1672cfaeb3ed7975a004213367bf1d))
+
 ## [1.9.0](https://github.com/antmelekhin/docker-systemd/compare/v1.8.0...v1.9.0) (2025-08-23)
 
 
