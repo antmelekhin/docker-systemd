@@ -68,6 +68,10 @@ jobs:
             dockerfile: 'fedora/41.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'fedora-42'
+            dockerfile: 'fedora/42.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'opensuse-15.6'
             dockerfile: 'opensuse/15.6.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
