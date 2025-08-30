@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/antmelekhin/docker-systemd/compare/v1.9.0...v1.10.0) (2025-08-30)
+
+
+### Features
+
+* add fedora-42 ([ce7d60f](https://github.com/antmelekhin/docker-systemd/commit/ce7d60f36ced40967cf0d15c65c479b3dc755f4c))
+
 ### Features
 
 * add 10.Dockerfile for alma and rockylinux ([4c50f98](https://github.com/antmelekhin/docker-systemd/commit/4c50f98eff1672cfaeb3ed7975a004213367bf1d))
