@@ -32,6 +32,7 @@ Fedora:
 - `fedora-40` (`linux/amd64`,`linux/arm64`)
 - `fedora-41` (`linux/amd64`,`linux/arm64`)
 - `fedora-42` (`linux/amd64`,`linux/arm64`)
+- `fedora-43` (`linux/amd64`,`linux/arm64`)
 
 Opensuse:
 
