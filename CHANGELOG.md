@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/antmelekhin/docker-systemd/compare/v1.10.0...v1.11.0) (2025-10-30)
+
+
+### Features
+
+* add fedora-43 ([925a64a](https://github.com/antmelekhin/docker-systemd/commit/925a64a8714bc4f4b226eb681c58ed3c56eaedc4))
+
 ## [1.10.0](https://github.com/antmelekhin/docker-systemd/compare/v1.9.0...v1.10.0) (2025-08-30)
 
 
