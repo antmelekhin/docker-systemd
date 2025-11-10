@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/antmelekhin/docker-systemd/compare/v1.11.0...v1.12.0) (2025-11-10)
+
+
+### Features
+
+* add opensuse-16.0 ([5b546be](https://github.com/antmelekhin/docker-systemd/commit/5b546be13cd48baa54f09614a82f8da2e934a9b2))
+
 ## [1.11.0](https://github.com/antmelekhin/docker-systemd/compare/v1.10.0...v1.11.0) (2025-10-30)
 
 
