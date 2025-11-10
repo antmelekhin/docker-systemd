@@ -80,6 +80,10 @@ jobs:
             dockerfile: 'opensuse/15.6.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'opensuse-16.0'
+            dockerfile: 'opensuse/16.0.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
           - tag: 'opensuse-tumbleweed'
             dockerfile: 'opensuse/tumbleweed.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
