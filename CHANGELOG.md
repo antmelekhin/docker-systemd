@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/antmelekhin/docker-systemd/compare/v1.13.0...v1.14.0) (2026-07-24)
+
+
+### Features
+
+* add fedora-44 ([784e402](https://github.com/antmelekhin/docker-systemd/commit/784e402a02189f5b4e990987c2b3f91771208928))
+
 ## [1.13.0](https://github.com/antmelekhin/docker-systemd/compare/v1.12.0...v1.13.0) (2026-07-24)
 
 
