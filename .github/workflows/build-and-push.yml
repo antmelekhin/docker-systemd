@@ -116,6 +116,10 @@ jobs:
             dockerfile: 'ubuntu/24.04.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
+          - tag: 'ubuntu-26.04'
+            dockerfile: 'ubuntu/26.04.Dockerfile'
+            platforms: 'linux/amd64,linux/arm64'
+
     steps:
       - name: 'Checkout the codebase'
         uses: 'actions/checkout@v6'
