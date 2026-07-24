@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.13.0](https://github.com/antmelekhin/docker-systemd/compare/v1.12.0...v1.13.0) (2026-07-24)
+
+
+### Features
+
+* add ubuntu-26.04 ([02fb0db](https://github.com/antmelekhin/docker-systemd/commit/02fb0db33443d4118f31186c86c92f2f7c3badb2))
+* rm eol images from build workflow ([724e231](https://github.com/antmelekhin/docker-systemd/commit/724e231569b5460f32b54217cab7b3fe7f9aa908))
+
 ## [1.12.0](https://github.com/antmelekhin/docker-systemd/compare/v1.11.0...v1.12.0) (2025-11-10)
 
 
