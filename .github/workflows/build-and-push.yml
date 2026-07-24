@@ -36,14 +36,6 @@ jobs:
             dockerfile: 'amazonlinux/2023.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
-          - tag: 'centos-7'
-            dockerfile: 'centos/7.Dockerfile'
-            platforms: 'linux/amd64'
-
-          - tag: 'debian-10'
-            dockerfile: 'debian/10.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
           - tag: 'debian-11'
             dockerfile: 'debian/11.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
@@ -54,18 +46,6 @@ jobs:
 
           - tag: 'debian-13'
             dockerfile: 'debian/13.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
-          - tag: 'fedora-39'
-            dockerfile: 'fedora/39.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
-          - tag: 'fedora-40'
-            dockerfile: 'fedora/40.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
-          - tag: 'fedora-41'
-            dockerfile: 'fedora/41.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'fedora-42'
@@ -98,14 +78,6 @@ jobs:
 
           - tag: 'rockylinux-10'
             dockerfile: 'rockylinux/10.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
-          - tag: 'ubuntu-18.04'
-            dockerfile: 'ubuntu/18.04.Dockerfile'
-            platforms: 'linux/amd64,linux/arm64'
-
-          - tag: 'ubuntu-20.04'
-            dockerfile: 'ubuntu/20.04.Dockerfile'
             platforms: 'linux/amd64,linux/arm64'
 
           - tag: 'ubuntu-22.04'
