@@ -7,6 +7,8 @@ ENV container=docker \
 
 RUN INSTALL_PKGS='findutils iproute2 python3 python3-apt sudo systemd' \
     && echo 'Acquire::Check-Valid-Until "false";' | tee /etc/apt/apt.conf.d/80archive \
+    && sed -i -e 's/^# \(deb http:\/\/snapshot\)/deb http:\/\/snapshot/' \
+        -e 's/^deb http:\/\/deb\./# deb http:\/\/deb\./' /etc/apt/sources.list \
     && apt-get update && apt-get install $INSTALL_PKGS -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
