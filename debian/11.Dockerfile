@@ -6,7 +6,7 @@ ENV container=docker \
     DEBIAN_FRONTEND=noninteractive
 
 RUN INSTALL_PKGS='findutils iproute2 python3 python3-apt sudo systemd' \
-    && sed -i 's|deb.debian.org/debian|archive.debian.org/debian|g' /etc/apt/sources.list \
+    && echo 'Acquire::Check-Valid-Until "false";' | tee /etc/apt/apt.conf.d/80archive \
     && apt-get update && apt-get install $INSTALL_PKGS -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
