@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.1](https://github.com/antmelekhin/docker-systemd/compare/v1.14.0...v1.14.1) (2026-09-10)
+
+
+### Fixes
+
+* change debian 11 repository mirror to archive ([634b21e](https://github.com/antmelekhin/docker-systemd/commit/634b21e73511a191a9c7ba5fbe21fb4e62b88955))
+
 ## [1.14.0](https://github.com/antmelekhin/docker-systemd/compare/v1.13.0...v1.14.0) (2026-07-24)
 
 
