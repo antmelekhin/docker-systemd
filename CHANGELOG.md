@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.15.0](https://github.com/antmelekhin/docker-systemd/compare/v1.14.0...v1.15.0) (2026-10-08)
+
+
+### Features
+
+* revert archive mirror for debian 11 ([b31d31e](https://github.com/antmelekhin/docker-systemd/commit/b31d31e60f1bc4e22a622090410fc8eda2dfb162))
+
+
+### Fixes
+
+* change debian 11 repository mirror to archive ([634b21e](https://github.com/antmelekhin/docker-systemd/commit/634b21e73511a191a9c7ba5fbe21fb4e62b88955))
+* change debian 11 repository mirror to snapshot ([444fd64](https://github.com/antmelekhin/docker-systemd/commit/444fd6481d76cbd4a7943bdab319dee61c06c766))
+* temporarily disabled repository check-valid-until in debian 11 ([ddec061](https://github.com/antmelekhin/docker-systemd/commit/ddec061d66936e0af82528c28067478a0aca9165))
+
 ## [1.14.0](https://github.com/antmelekhin/docker-systemd/compare/v1.13.0...v1.14.0) (2026-07-24)
 
 
